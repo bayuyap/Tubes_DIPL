@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/drawable/btn_signup.xml" value="0.1345" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/drawable/login.xml" value="0.1345" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/drawable/rectangle.xml" value="0.1345" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/drawable/rectangle_2.xml" value="0.1345" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/drawable/rectangle_login.xml" value="0.1345" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/drawable/rounded_edittext.xml" value="0.1345" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/drawable/search_edittext.xml" value="0.1835" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/drawable/shadow_button.xml" value="0.1835" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/layout/activity_borrow.xml" value="0.4" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/layout/activity_login.xml" value="0.20516304347826086" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/layout/activity_main.xml" value="0.277363184079602" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/layout/activity_register.xml" value="0.20516304347826086" />
+        <entry key="..\:/Projects/Tubes_RPLDI/app/src/main/res/layout/activity_synopsis.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
