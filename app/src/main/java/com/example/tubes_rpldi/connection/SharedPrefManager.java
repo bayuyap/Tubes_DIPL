@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 
-import com.example.tubes_rpldi.LoginActivity;
+import com.example.tubes_rpldi.Activity.LoginActivity;
 import com.example.tubes_rpldi.model.Member;
 
 

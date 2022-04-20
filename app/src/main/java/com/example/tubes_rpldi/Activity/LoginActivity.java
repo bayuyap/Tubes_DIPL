@@ -1,7 +1,6 @@
-package com.example.tubes_rpldi;
+package com.example.tubes_rpldi.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -12,6 +11,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.tubes_rpldi.R;
 import com.example.tubes_rpldi.connection.ConnectionURL;
 import com.example.tubes_rpldi.connection.RequestHandler;
 import com.example.tubes_rpldi.connection.SharedPrefManager;
