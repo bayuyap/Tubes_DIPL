@@ -25,7 +25,7 @@ import java.util.HashMap;
 
 public class LoginActivity extends AppCompatActivity {
     TextInputEditText etUsername, etPassword;
-    Button btnLogin;
+    Button btnLogin,btnRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +33,15 @@ public class LoginActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.buttonLogin);
-
+        btnRegister = findViewById(R.id.btnToRegister);
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toRegister = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(toRegister);
+                overridePendingTransition(0,0);
+            }
+        });
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,8 +51,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void MemberLogin() {
-        String username = etUsername.getText().toString();
-        String password = etPassword.getText().toString();
+        final String username = etUsername.getText().toString();
+        final String password = etPassword.getText().toString();
 
         if (TextUtils.isEmpty(username)) {
             etUsername.setError("Please enter your username");

@@ -30,9 +30,8 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.MyViewHolder> 
     }
     @Override
     public MyViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
-        View mview = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_book, parent, false);
-        MyViewHolder mViewHolder = new MyViewHolder(mview);
-        return null;
+        View mview = LayoutInflater.from(context).inflate(R.layout.item_book, parent, false);
+        return new MyViewHolder(mview);
     }
 
     @Override
@@ -41,7 +40,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.MyViewHolder> 
             holder.tvIdBuku.setText(mbookList.get(position).getId_book());
             holder.tvIdBuku.setVisibility(View.GONE);
         }
-
+        String pdf = mbookList.get(position).getPdf();
         holder.tvJudulBuku.setText(mbookList.get(position).getName());
         Glide.with(holder.itemView.getContext())
                 .load(Config.IMAGE_URL + mbookList.get(position).getFoto())
@@ -54,6 +53,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.MyViewHolder> 
                 String id_book = holder.tvIdBuku.getText().toString();
                 Intent intent = new Intent(context, SynopsisActivity.class);
                 intent.putExtra("id_book", id_book);
+                intent.putExtra("pdf", pdf);
                 context.startActivity(intent);
             }
         });
@@ -61,7 +61,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.MyViewHolder> 
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mbookList.size();
     }
 
 

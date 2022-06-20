@@ -16,6 +16,10 @@ public class Book {
     private String synopsis;
     @SerializedName("foto")
     private String foto;
+    @SerializedName("pdf")
+    private String pdf;
+
+
 
     public Book() {
     }
@@ -82,5 +86,13 @@ public class Book {
 
     public void setFoto(String foto) {
         this.foto = foto;
+    }
+
+    public String getPdf() {
+        return pdf;
+    }
+
+    public void setPdf(String pdf) {
+        this.pdf = pdf;
     }
 }
